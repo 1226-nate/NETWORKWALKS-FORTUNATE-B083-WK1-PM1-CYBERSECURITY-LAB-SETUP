@@ -138,7 +138,7 @@ The extracted Kali Linux VirtualBox files are used to add the virtual machine to
 
 The virtual machine must be configured with suitable memory, processor, and network settings according to the laptop's available resources.
 
-**Evidence:** `04-kali-virtual-machine.png`
+![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20200847.png)
 
 ### Step 5: Create a Custom NAT Network
 
@@ -165,32 +165,6 @@ The network configuration should be checked inside Kali Linux to confirm that th
 
 ![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20201148.png)
 
-### Step 7: Configure Clipboard and Drag-and-Drop
-
-The VirtualBox settings must be configured to support communication between the Windows host and Kali Linux guest.
-
-Required settings:
-
-- Shared Clipboard: Bidirectional
-- Drag and Drop: Bidirectional
-
-These settings allow supported text and file-transfer operations between the two environments.
-
-**Evidence:** `07-clipboard-drag-drop.png`
-
-### Step 8: Configure a Shared Folder
-
-A shared folder must be configured between Windows and Kali Linux.
-
-The host folder specified in the task is:
-
-`Downloads`
-
-The folder should be configured in VirtualBox under the Kali Linux virtual machine's Shared Folders settings.
-
-Enable the appropriate options, including Auto-mount where required.
-
-**Evidence:** `08-shared-folder-configuration.png`
 
 ### Step 9: Verify Internet Connectivity
 
@@ -248,26 +222,8 @@ sudo nmcli connection up "Wired connection 1"
 
 These commands should only be used when applicable to the actual network connection and troubleshooting symptoms.
 
-## 7. Screenshot Evidence
 
-All practical evidence for this task should be captured directly from the Windows laptop and Kali Linux virtual machine.
-
-The screenshots are organised in the `screenshots` folder.
-
-| No. | Screenshot | Evidence |
-|---|---|---|
-| 01 | Downloaded files | VirtualBox and Kali Linux download files |
-| 02 | VirtualBox installation | VirtualBox installation or application |
-| 03 | Kali extracted files | Extracted Kali Linux VirtualBox files |
-| 04 | Kali virtual machine | Kali Linux VM in VirtualBox |
-| 05 | NAT Network configuration | Custom 10.0.0.0/24 network |
-| 06 | Kali IP configuration | Kali Linux IP address |
-| 07 | Clipboard and drag-and-drop | VirtualBox integration settings |
-| 08 | Shared folder configuration | Windows Downloads folder shared with Kali |
-| 09 | Internet connectivity | Successful connectivity test |
-| 10 | Kali snapshot | Created VirtualBox snapshot |
-
-## 8. Additional Practical Work
+## 7. Additional Practical Work
 
 The Week 1 task also introduces the possibility of adding additional virtual machines and testing communication between them.
 
@@ -275,7 +231,7 @@ These activities are considered additional or optional unless specifically requi
 
 The current project focuses on the Windows host, Oracle VirtualBox, and Kali Linux environment.
 
-## 9. Expected Learning Outcomes
+## 8. Expected Learning Outcomes
 
 Through this practical task, the following skills are developed:
 
@@ -289,7 +245,7 @@ Through this practical task, the following skills are developed:
 - Creating and managing virtual machine snapshots.
 - Documenting technical procedures and evidence.
 
-## 10. Conclusion
+## 9. Conclusion
 
 The Week 1 practical task introduces the foundation of building a virtual cybersecurity lab environment.
 

@@ -116,7 +116,7 @@ The installer file was:
 
 VirtualBox provides the virtualisation platform required to create and manage the Kali Linux virtual machine.
 
-**Evidence:** `02-virtualbox-installation.png`
+![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/image.png)
 
 ### Step 3: Download and Extract Kali Linux
 

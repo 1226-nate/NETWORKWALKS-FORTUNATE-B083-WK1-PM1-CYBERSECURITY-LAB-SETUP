@@ -104,7 +104,7 @@ The Windows laptop was used as the host machine for the virtual cybersecurity la
 
 The required software installation files were downloaded and organised in preparation for the setup process.
 
-**Evidence:** `01-downloaded-files.png`
+*![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20203300.png)
 
 ### Step 2: Download and Install Oracle VirtualBox
 

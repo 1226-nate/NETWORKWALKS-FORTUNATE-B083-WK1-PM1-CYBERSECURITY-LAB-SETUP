@@ -130,7 +130,7 @@ The archive was extracted to access the pre-built virtual machine files.
 
 The extracted files are used to prepare Kali Linux in VirtualBox.
 
-**Evidence:** `03-kali-extracted-files.png`
+![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20214118.png)
 
 ### Step 4: Prepare Kali Linux in VirtualBox
 

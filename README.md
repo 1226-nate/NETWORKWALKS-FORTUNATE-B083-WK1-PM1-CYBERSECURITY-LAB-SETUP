@@ -152,7 +152,8 @@ The required network configuration is:
 
 The Kali Linux virtual machine must be connected to this NAT Network.
 
-![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20201148.png)
+![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20200900.png)
+
 
 ### Step 6: Configure Kali Linux IP Address
 
@@ -162,7 +163,7 @@ Kali Linux must use the IP address specified in the practical task:
 
 The network configuration should be checked inside Kali Linux to confirm that the correct address has been assigned.
 
-**Evidence:** `06-kali-ip-configuration.png`
+![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20201148.png)
 
 ### Step 7: Configure Clipboard and Drag-and-Drop
 

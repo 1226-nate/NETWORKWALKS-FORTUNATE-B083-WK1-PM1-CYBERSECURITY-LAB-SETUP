@@ -58,6 +58,7 @@ The following files were confirmed on the Windows laptop:
 - Purpose: Virtualisation software used to manage and run Kali Linux.
 
 **2. Kali Linux**
+![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20205734.png)
 - File: `kali-linux-2026.2-virtualbox-amd64`
 - File type: Compressed archive
 - Purpose: Contains the pre-built Kali Linux VirtualBox virtual machine files.

@@ -49,7 +49,7 @@ The following installation files were downloaded for the lab setup:
 
 ### Downloaded Files
 
-
+![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20203300.png)
 The following files were confirmed on the Windows laptop:
 
 **1. Oracle VirtualBox**

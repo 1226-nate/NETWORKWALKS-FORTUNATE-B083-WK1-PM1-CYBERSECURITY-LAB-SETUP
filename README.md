@@ -48,7 +48,7 @@ The following installation files were downloaded for the lab setup:
 | 7-Zip | Version to be documented | Supports archive extraction |
 
 ### Downloaded Files
-
+![](Screenshot 2026-10-30 203300.png)
 The following files were confirmed on the Windows laptop:
 
 **1. Oracle VirtualBox**

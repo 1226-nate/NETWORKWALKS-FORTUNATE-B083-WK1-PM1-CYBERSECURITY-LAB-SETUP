@@ -83,8 +83,8 @@ After installation, Kali Linux was successfully launched inside Oracle VirtualBo
 
 The desktop environment provided access to the Linux operating system and its available system utilities.
 
-Evidence:
-https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20200847.png
+Screenshot 2026-10-30 200847.png
+
 Step 6: Verifying the Virtual Environment
 
 The final step involved checking that the Kali Linux virtual machine could start and operate within VirtualBox.

@@ -152,7 +152,7 @@ The required network configuration is:
 
 The Kali Linux virtual machine must be connected to this NAT Network.
 
-**Evidence:** `05-nat-network-configuration.png`
+![](https://github.com/1226-nate/NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Screenshot%202026-10-30%20201148.png)
 
 ### Step 6: Configure Kali Linux IP Address
 

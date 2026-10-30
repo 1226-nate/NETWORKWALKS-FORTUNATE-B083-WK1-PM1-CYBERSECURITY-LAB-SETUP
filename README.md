@@ -1,165 +1,304 @@
 # NETWORKWALKS-FORTUNATE-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
-NETWORKWALKS – WEEK 1 CYBERSECURITY LAB SETUP
+## WEEK 1 – CYBERSECURITY LAB ENVIRONMENT SETUP
 
-Project: Cybersecurity Lab Setup
-Programme: NetworkWalks
-Week: 1
-Focus: Virtualisation and Kali Linux Environment Setup
-Host Operating System: Windows
-Virtualisation Software: Oracle VirtualBox
-Guest Operating System: Kali Linux
+**Task:** WK1-PM1  
+**Project:** Cybersecurity Lab Setup  
+**Host Operating System:** Windows  
+**Virtualisation Software:** Oracle VM VirtualBox 7.2.22  
+**Virtual Machine:** Kali Linux 2026.2 (VirtualBox AMD64)  
+**Network Configuration:** Custom NAT Network  
+**IP Address Requirement:** 10.0.0.2/24
 
-⸻
+---
 
-1. Project Overview
+## 1. Project Overview
 
-This project documents the setup of my cybersecurity laboratory environment as part of the NetworkWalks cybersecurity practical programme.
+This project documents the preparation and configuration of a virtual cybersecurity lab environment as part of the NetworkWalks Academy Week 1 practical task.
 
-The primary objective of Week 1 was to establish a functional virtual cybersecurity environment using Oracle VirtualBox and Kali Linux.
+The purpose of this exercise is to establish an isolated virtual environment where Kali Linux can be used as the primary cybersecurity testing machine.
 
-By creating a virtual machine, I gained practical exposure to virtualisation technology and learned how to prepare an isolated Linux environment for future cybersecurity exercises.
+Oracle VM VirtualBox is used to run Kali Linux as a virtual machine on a Windows laptop. A custom NAT Network is required to provide network connectivity and create a structured environment for future practical cybersecurity exercises.
 
-This lab serves as the foundation for developing my technical knowledge and practical cybersecurity skills.
+This README serves as a technical record of the setup process, configuration requirements, and supporting screenshot evidence.
 
-2. Project Objectives
+## 2. Project Objectives
 
-The main objectives of this practical exercise were to:
+The main objectives of this practical task are to:
 
-* Understand the concept and purpose of virtualisation.
-* Install and explore Oracle VirtualBox.
-* Download and prepare the Kali Linux operating system.
-* Create and configure a Kali Linux virtual machine.
-* Install and launch Kali Linux within VirtualBox.
-* Verify that the virtual environment operates successfully.
-* Document the setup process using screenshots.
+- Prepare the Windows laptop for virtualisation.
+- Download and install the required supporting software.
+- Install Oracle VM VirtualBox.
+- Download and extract the Kali Linux VirtualBox image.
+- Prepare Kali Linux as a virtual machine.
+- Create a custom NAT Network using the `10.0.0.0/24` subnet.
+- Configure Kali Linux to use the required IP address, `10.0.0.2/24`.
+- Enable clipboard sharing and drag-and-drop functionality.
+- Configure a shared folder between Windows and Kali Linux.
+- Verify internet connectivity inside Kali Linux.
+- Create a snapshot of the virtual machine.
 
-3. Tools and Technologies
+## 3. Software and Installation Files
 
-The following tools and technologies were used:
+The following installation files were downloaded for the lab setup:
 
-Tool	Purpose
-Windows	Host operating system
-Oracle VirtualBox	Virtualisation platform
-Kali Linux	Guest operating system
+| Software | File / Version | Purpose |
+|---|---|---|
+| Oracle VirtualBox | VirtualBox-7.2.22-175245-Win | Runs virtual machines |
+| Kali Linux | kali-linux-2026.2-virtualbox-amd64 | Provides the cybersecurity testing environment |
+| 7-Zip | Version to be documented | Supports archive extraction |
 
-4. Practical Implementation
+### Downloaded Files
 
-Step 1: Installing Oracle VirtualBox
+The following files were confirmed on the Windows laptop:
 
-Oracle VirtualBox was installed on my Windows laptop.
+**1. Oracle VirtualBox**
+- File: `VirtualBox-7.2.22-175245-Win`
+- File type: Application
+- Purpose: Virtualisation software used to manage and run Kali Linux.
 
-VirtualBox provides a platform for creating and managing virtual machines without replacing the existing operating system.
+**2. Kali Linux**
+- File: `kali-linux-2026.2-virtualbox-amd64`
+- File type: Compressed archive
+- Purpose: Contains the pre-built Kali Linux VirtualBox virtual machine files.
 
-Evidence:
-Step 2: Downloading Kali Linux
+Kali Linux was located through a Google search and downloaded as a VirtualBox AMD64 archive. The archive was extracted to access the virtual machine files.
 
-The Kali Linux operating system was downloaded from its official website.
+> Note: The archive is a pre-built VirtualBox image, not a standard ISO installation file.
 
-Kali Linux is a Debian-based Linux distribution designed for cybersecurity, penetration testing and security research.
+## 4. Lab Environment Architecture
 
-Official download page:
-https://www.kali.org/get-kali/
+The lab uses Windows as the host operating system and Kali Linux as the guest virtual machine.
 
-Evidence:
-Step 3: Creating the Kali Linux Virtual Machine
+### Environment Components
 
-A new virtual machine was created in Oracle VirtualBox.
+- **Host machine:** Windows laptop
+- **Virtualisation platform:** Oracle VM VirtualBox
+- **Guest operating system:** Kali Linux 2026.2
+- **Virtual network:** Custom NAT Network
+- **Network subnet:** 10.0.0.0/24
+- **Required Kali IP:** 10.0.0.2/24
 
-The virtual machine was configured with the appropriate system resources, including memory, processor allocation and virtual storage.
+### Network Configuration Requirements
 
-The Kali Linux installation image was selected as the operating system installation media.
+| Network Setting | Required Configuration |
+|---|---|
+| Network type | NAT Network |
+| Network address | 10.0.0.0 |
+| Subnet mask | 255.255.255.0 |
+| CIDR notation | /24 |
+| Kali Linux IP | 10.0.0.2 |
+| Suggested gateway | 10.0.0.1 |
+| Broadcast address | 10.0.0.255 |
 
-Evidence:
-Step 4: Installing Kali Linux
+The actual gateway and DHCP configuration must be checked against the VirtualBox NAT Network settings.
 
-The Kali Linux installation process was completed inside the VirtualBox environment.
+The DHCP range should not assign `10.0.0.2` to another device if that address is configured statically for Kali Linux.
 
-The installation involved following the setup instructions and configuring the operating system.
+## 5. Implementation Process
 
-Evidence:
-Step 5: Accessing the Kali Linux Desktop
+### Step 1: Prepare the Windows Environment
 
-After installation, Kali Linux was successfully launched inside Oracle VirtualBox.
+The Windows laptop was used as the host machine for the virtual cybersecurity lab.
 
-The desktop environment provided access to the Linux operating system and its available system utilities.
+The required software installation files were downloaded and organised in preparation for the setup process.
 
-Screenshot 2026-10-30 200847.png
+**Evidence:** `01-downloaded-files.png`
 
-Step 6: Verifying the Virtual Environment
+### Step 2: Download and Install Oracle VirtualBox
 
-The final step involved checking that the Kali Linux virtual machine could start and operate within VirtualBox.
+Oracle VM VirtualBox version 7.2.22 was downloaded.
 
-This confirmed that the virtual laboratory environment was prepared for future practical activities.
+The installer file was:
 
-Evidence:
-5. Challenges and Solutions
+`VirtualBox-7.2.22-175245-Win`
 
-During the laboratory setup, the following potential technical challenges were considered:
+VirtualBox provides the virtualisation platform required to create and manage the Kali Linux virtual machine.
 
-1. Virtual Machine Configuration
+**Evidence:** `02-virtualbox-installation.png`
 
-Challenge: Allocating appropriate hardware resources to the virtual machine.
+### Step 3: Download and Extract Kali Linux
 
-Solution: Configured the virtual machine using available system resources to support stable operation.
+Kali Linux 2026.2 VirtualBox AMD64 was downloaded as a compressed archive.
 
-2. Operating System Installation
+The downloaded file was:
 
-Challenge: Understanding the Kali Linux installation process within a virtual environment.
+`kali-linux-2026.2-virtualbox-amd64`
 
-Solution: Followed the installation instructions and completed the required configuration steps.
+The archive was extracted to access the pre-built virtual machine files.
 
-3. Virtual Machine Startup
+The extracted files are used to prepare Kali Linux in VirtualBox.
 
-Challenge: Ensuring that the installed operating system could launch correctly.
+**Evidence:** `03-kali-extracted-files.png`
 
-Solution: Started the virtual machine and checked that the Kali Linux desktop environment loaded successfully.
+### Step 4: Prepare Kali Linux in VirtualBox
 
-6. Skills and Knowledge Gained
+The extracted Kali Linux VirtualBox files are used to add the virtual machine to Oracle VirtualBox.
 
-Through this practical exercise, I developed an understanding of:
+The virtual machine must be configured with suitable memory, processor, and network settings according to the laptop's available resources.
 
-* Virtualisation fundamentals.
-* Oracle VirtualBox installation and configuration.
-* Kali Linux installation and setup.
-* Linux operating system environments.
-* Virtual machine resource allocation.
-* Technical documentation and evidence management.
-* Establishing a foundation for cybersecurity laboratory exercises.
+**Evidence:** `04-kali-virtual-machine.png`
 
-7. Learning Reflection
+### Step 5: Create a Custom NAT Network
 
-Week 1 provided an important introduction to building a practical cybersecurity environment.
+A custom NAT Network must be created in VirtualBox.
 
-I learned how virtualisation makes it possible to operate a separate operating system within an existing computer environment.
+The required network configuration is:
 
-Setting up Kali Linux in VirtualBox also helped me understand the preparation required before conducting practical cybersecurity activities.
+- Network type: NAT Network
+- Network address: `10.0.0.0/24`
+- Subnet mask: `255.255.255.0`
 
-This experience has strengthened my confidence in working with virtual machines and Linux environments.
+The Kali Linux virtual machine must be connected to this NAT Network.
 
-8. Conclusion
+**Evidence:** `05-nat-network-configuration.png`
 
-The Week 1 cybersecurity laboratory setup established the foundation for my practical learning journey with NetworkWalks.
+### Step 6: Configure Kali Linux IP Address
 
-Using Oracle VirtualBox and Kali Linux, I prepared a virtual environment that can support future cybersecurity learning activities.
+Kali Linux must use the IP address specified in the practical task:
 
-This project represents my first step towards developing practical technical skills, improving my understanding of Linux and exploring the cybersecurity field.
+`10.0.0.2/24`
 
-⸻
+The network configuration should be checked inside Kali Linux to confirm that the correct address has been assigned.
 
-9. Project Evidence
+**Evidence:** `06-kali-ip-configuration.png`
 
-All practical screenshots are organised in the screenshots folder of this repository.
+### Step 7: Configure Clipboard and Drag-and-Drop
 
-The screenshots document the installation, configuration and successful launch of the virtual laboratory environment.
+The VirtualBox settings must be configured to support communication between the Windows host and Kali Linux guest.
 
-10. Acknowledgements
+Required settings:
 
-Special appreciation to NetworkWalks and my instructor Waqas Karim CCIE for providing the opportunity to develop practical cybersecurity knowledge and technical skills.
+- Shared Clipboard: Bidirectional
+- Drag and Drop: Bidirectional
 
-⸻
+These settings allow supported text and file-transfer operations between the two environments.
 
-Author: Fortunate Mathebula
-Programme: NetworkWalks Cybersecurity
-Project: Week 1 – Cybersecurity Lab Setup
+**Evidence:** `07-clipboard-drag-drop.png`
 
-#Networkwalks #Cybersecurity #KaliLinux #VirtualBox
+### Step 8: Configure a Shared Folder
+
+A shared folder must be configured between Windows and Kali Linux.
+
+The host folder specified in the task is:
+
+`Downloads`
+
+The folder should be configured in VirtualBox under the Kali Linux virtual machine's Shared Folders settings.
+
+Enable the appropriate options, including Auto-mount where required.
+
+**Evidence:** `08-shared-folder-configuration.png`
+
+### Step 9: Verify Internet Connectivity
+
+Kali Linux must have internet access through the configured NAT Network.
+
+Connectivity should be tested from inside the Kali Linux terminal.
+
+Example commands:
+
+```bash
+ip addr
+```
+
+```bash
+ping -c 4 8.8.8.8
+```
+
+```bash
+ping -c 4 google.com
+```
+
+The first command checks network interface information. The other commands test external IP connectivity and DNS resolution.
+
+**Evidence:** `09-internet-connectivity.png`
+
+### Step 10: Create a Virtual Machine Snapshot
+
+After completing and verifying the required configuration, create a snapshot of the Kali Linux virtual machine.
+
+The snapshot provides a restore point that can be used if future lab activities cause configuration problems.
+
+Suggested snapshot name:
+
+`Week 1 - Kali Linux Lab Setup`
+
+**Evidence:** `10-kali-snapshot.png`
+
+## 6. Troubleshooting Reference
+
+The practical task includes a possible network connectivity issue affecting some VirtualBox 7 and Kali Linux versions.
+
+If the specified issue occurs, the following commands are provided as a troubleshooting reference:
+
+```bash
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+```
+
+```bash
+sudo nmcli connection down "Wired connection 1"
+```
+
+```bash
+sudo nmcli connection up "Wired connection 1"
+```
+
+These commands should only be used when applicable to the actual network connection and troubleshooting symptoms.
+
+## 7. Screenshot Evidence
+
+All practical evidence for this task should be captured directly from the Windows laptop and Kali Linux virtual machine.
+
+The screenshots are organised in the `screenshots` folder.
+
+| No. | Screenshot | Evidence |
+|---|---|---|
+| 01 | Downloaded files | VirtualBox and Kali Linux download files |
+| 02 | VirtualBox installation | VirtualBox installation or application |
+| 03 | Kali extracted files | Extracted Kali Linux VirtualBox files |
+| 04 | Kali virtual machine | Kali Linux VM in VirtualBox |
+| 05 | NAT Network configuration | Custom 10.0.0.0/24 network |
+| 06 | Kali IP configuration | Kali Linux IP address |
+| 07 | Clipboard and drag-and-drop | VirtualBox integration settings |
+| 08 | Shared folder configuration | Windows Downloads folder shared with Kali |
+| 09 | Internet connectivity | Successful connectivity test |
+| 10 | Kali snapshot | Created VirtualBox snapshot |
+
+## 8. Additional Practical Work
+
+The Week 1 task also introduces the possibility of adding additional virtual machines and testing communication between them.
+
+These activities are considered additional or optional unless specifically required by the instructor.
+
+The current project focuses on the Windows host, Oracle VirtualBox, and Kali Linux environment.
+
+## 9. Expected Learning Outcomes
+
+Through this practical task, the following skills are developed:
+
+- Understanding virtualisation and virtual machine management.
+- Preparing a cybersecurity testing environment.
+- Working with Kali Linux.
+- Understanding NAT Network configuration.
+- Applying basic IP addressing concepts.
+- Configuring host-to-guest integration.
+- Testing internet connectivity.
+- Creating and managing virtual machine snapshots.
+- Documenting technical procedures and evidence.
+
+## 10. Conclusion
+
+The Week 1 practical task introduces the foundation of building a virtual cybersecurity lab environment.
+
+Using Oracle VM VirtualBox and Kali Linux, the project establishes the components needed for future cybersecurity learning and practical testing.
+
+The README provides a structured record of the software, network requirements, implementation process, troubleshooting reference, and screenshot evidence.
+
+The completion of each configuration step should be supported by genuine screenshots captured from the actual lab environment.
+
+---
+
+**Project:** Cybersecurity Lab Setup  
+**Task:** WK1-PM1  
+**Environment:** Windows + Oracle VirtualBox + Kali Linux  
+**Repository:** Week 1 Cybersecurity Lab Setup
